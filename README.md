@@ -20,6 +20,26 @@ pnpm test         # Vitest (scoring)
 pnpm build
 ```
 
+## Docker
+
+Build image:
+
+```bash
+docker build -t ai-agent-benchmark:latest .
+```
+
+Run container:
+
+```bash
+docker run --rm -p 3000:3000 --name ai-agent-benchmark ai-agent-benchmark:latest
+```
+
+Or with compose:
+
+```bash
+docker compose up --build
+```
+
 ## Stack
 
 - Next.js 15 (App Router), React 19, Tailwind CSS
